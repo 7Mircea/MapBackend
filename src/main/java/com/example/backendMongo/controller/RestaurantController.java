@@ -3,10 +3,7 @@ package com.example.backendMongo.controller;
 import com.example.backendMongo.model.Restaurant;
 import com.example.backendMongo.service.RestaurantService;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
