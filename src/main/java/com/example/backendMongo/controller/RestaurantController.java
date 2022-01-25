@@ -18,8 +18,13 @@ public class RestaurantController {
         return restaurantService.getAllRestaurants();
     }
 
-    @GetMapping("{city}")
+    @GetMapping("/city/{city}")
     public List<Restaurant> fetchRestaurantByCity(@PathVariable("city") String city) {
         return restaurantService.getRestaurantsByCity(city);
+    }
+
+    @GetMapping("/country/{country}")
+    public List<Restaurant> fetchRestaurantByCountry(@PathVariable("country") String country) {
+        return restaurantService.getRestaurantByCountry(country);
     }
 }

@@ -19,4 +19,8 @@ public class RestaurantService {
     public List<Restaurant> getRestaurantsByCity(String city) {
         return restaurantRepository.findRestaurantByCity(city);
     }
+
+    public List<Restaurant> getRestaurantByCountry(String country) {
+        return restaurantRepository.findRestaurantByCountry(country);
+    }
 }

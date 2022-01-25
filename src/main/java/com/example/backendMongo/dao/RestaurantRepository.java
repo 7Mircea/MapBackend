@@ -11,4 +11,6 @@ public interface RestaurantRepository
     Optional<Restaurant> findRestaurantByRestaurantLink(String restaurant_link);
 
     List<Restaurant> findRestaurantByCity(String city);
+
+    List<Restaurant> findRestaurantByCountry(String country);
 }
